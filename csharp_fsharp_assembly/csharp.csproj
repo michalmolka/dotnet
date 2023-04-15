@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<!-- This is an F# assembly reference-->
+  <ItemGroup>
+    <Reference Include="Fsharp assembly">
+      <HintPath>..\fsharp\bin\Debug\net7.0\fsharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+<!--End of an F# assembly-->
+
+</Project>
