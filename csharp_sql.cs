@@ -54,7 +54,7 @@ namespace csharp_sql
             {
                 insertCommand.ExecuteNonQuery();
             } catch (Exception ex) {
-                System.Console.WriteLine($"INSERT INTO - has na error.{ex.Message}");
+                System.Console.WriteLine($"INSERT INTO - has an error.{ex.Message}");
             }
 
             // Close connection
