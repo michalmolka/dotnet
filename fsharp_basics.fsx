@@ -192,8 +192,7 @@ let matchFunction x =
     | 1 -> printfn "%s" "is 1"
     | 2 -> printfn "%s" "is 2"
     |i when i  >2 && i <5 -> printfn "< 5 > 2"
-     | _ -> printfn "%s" "is more than 5"
-printfn "----"
+    | _ -> printfn "%s" "is more than 5"
 matchFunction 6
 // is more than 5
 
@@ -244,7 +243,8 @@ let addValues03 (valueA:int):int = valueA*2
 let nextValue01 (valueA:int):int = (valueA + 1)*2
 
 let finalFunc01 = addValues03 >> nextValue01 >> printfn "%d"
-
+finalFunc01 5
+// 22
 
 // Modules
 module addFunctionModule =
