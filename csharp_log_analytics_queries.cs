@@ -5,7 +5,6 @@ using Azure.Monitor.Query.Models;
 namespace log_analytics;
 class Program
 {
-
     public class RUConsumption
     {
         public string? TimeGenerated { get; set; }
@@ -48,7 +47,7 @@ class Program
             System.Console.WriteLine(
                 $@"Date: {item1.TimeGenerated.ToString()}, Container: {item1.CollectionName}, Operation: {item1.OperationName}, RU: {item1.RequestCharge}");
         }
-
+        // Response as a table object
         Azure.Response<LogsQueryResult> response02 = await logAnalyticsClient.QueryWorkspaceAsync(
             AzureVariables.logAnalyticsWorkspaceId,
             kqlQuery,
