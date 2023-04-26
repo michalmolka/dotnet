@@ -25,7 +25,7 @@ namespace csharp_ef
         [ForeignKey("CountyId")] // Points which column is Foreign Key
         public IowaPopulation? IowaPopulation { get; set; }
     };
-    // A database context and it's configuration
+    // A database context and its configuration
     public class IowaContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
