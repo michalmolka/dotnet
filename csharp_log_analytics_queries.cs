@@ -1,6 +1,5 @@
-﻿using Azure.Monitor.Query;
+using Azure.Monitor.Query;
 using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
 using Azure.Monitor.Query.Models;
 
 namespace log_analytics;
