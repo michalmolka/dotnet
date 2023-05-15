@@ -46,6 +46,11 @@ class Program
         // Specify a location for the downloaded file
         string downloadFile = Path.Combine("json_Files", fileName01);
         var downloadBlob = await blobClient01.DownloadToAsync(downloadFile);
+        
+        // Copy blob inside a container
+        BlobClient blobClient02_source = container.GetBlobClient(fileName01);
+        BlobClient blobClient02_destination = container.GetBlobClient("this_is_a_copy_" + fileName01);
+        await blobClient02_destination.StartCopyFromUriAsync(blobClient02_source.Uri);
 
         // Remove the file
         // var removeBlob = await blobClient01.DeleteAsync();
