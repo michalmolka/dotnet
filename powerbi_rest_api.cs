@@ -54,7 +54,7 @@ namespace PbiRestApi
             Console.WriteLine(refreshDataset.Result);
 
             // Add an admin user to a workspace
-            var values02 = JsonSerializer.Serialize(new { emailAddress = "LidiaH@eightfive.onmicrosoft.com", groupUserAccessRight = "Admin" });
+            var values02 = JsonSerializer.Serialize(new { emailAddress = "L***@***.com", groupUserAccessRight = "Admin" });
             var requestContent02 = new StringContent(values02, Encoding.UTF8, "application/json");
             var workspaceAddUser = client.PostAsync($"https://api.powerbi.com/v1.0/myorg/groups/{workspaceId}/users", requestContent02);
             Console.WriteLine(workspaceAddUser.Result);
