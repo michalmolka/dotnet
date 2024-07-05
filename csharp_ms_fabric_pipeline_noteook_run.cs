@@ -2,7 +2,7 @@ using System.Text.Json;
 using System.Text;
 using Microsoft.Data.SqlClient;
 
-namespace CsharpObjects;
+namespace CsharpPipelineNotebookRun;
 class Program
 {
     static void Main(string[] args)
