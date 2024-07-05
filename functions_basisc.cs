@@ -106,6 +106,8 @@ class Program
         }
         
         HttpClient client = AzureCredentialFabric(true, "3******7", "e******4", "Z******J");
+
+        // A call to an MS Fabric REST API
         var workspacesResponse = client.GetStringAsync("https://api.powerbi.com/v1.0/myorg/groups");
         Console.WriteLine(workspacesResponse.Result);
     }
