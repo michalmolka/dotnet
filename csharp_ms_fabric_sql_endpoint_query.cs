@@ -15,8 +15,8 @@ class Program
         string secret = "Z*****J";
         string serverAddress = "s*****i.datawarehouse.fabric.microsoft.com";
 
-        string ConnectionStringUser = $"Server={serverAddress}; Authentication=Active Directory Default; Encrypt=True; Database=eightfive_lakehouse"; // eightfive_lakehouse - for a lakehouse, eightfive_warehouse - for DW
-        string ConnectionStringSP = $"Server={serverAddress}; Authentication=Active Directory Service Principal; Encrypt=True; Database=eightfive_lakehouse;User Id={clientId}; Password={secret}"; // eightfive_lakehouse - for a lakehouse, eightfive_warehouse - for DW
+        string ConnectionStringUser = $"Server={serverAddress}; Authentication=Active Directory Default; Encrypt=True; Database=eightfive_lakehouse"; // eightfive_lakehouse - for a lakehouse, eightfive_warehouse - for a DW
+        string ConnectionStringSP = $"Server={serverAddress}; Authentication=Active Directory Service Principal; Encrypt=True; Database=eightfive_lakehouse;User Id={clientId}; Password={secret}"; // eightfive_lakehouse - for a lakehouse, eightfive_warehouse - for a DW
 
         SqlConnection conn = new SqlConnection(ConnectionStringUser);
         conn.Open();
